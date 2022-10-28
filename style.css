@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html, body{
+	width: 100vw;
+	height: 100vh;
+}
+
+body{
+	background-color: #202030;
+	color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#map{
+	width: 96vw;
+	height: 96vh;
+}
