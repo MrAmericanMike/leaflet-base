@@ -6,16 +6,19 @@
 
 html,
 body {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 }
 
 body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	background-color: #101020;
+	background-color: #202030;
 	color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-h1 {
-	text-align: center;
+#map {
+	width: 96vw;
+	height: 96vh;
 }
