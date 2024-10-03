@@ -1,6 +1,6 @@
-import "../css/global.css";
-import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+import "../css/global.css";
 
 const MAP = L.map("map").setView([10, 0], 2);
 
@@ -15,5 +15,11 @@ const CARTODB_POSITRON = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_al
 CARTODB_POSITRON.addTo(MAP);
 
 MAP.on("click", (event) => {
+	console.log(event);
+});
+
+const MARKER = L.marker([0, 0]).bindPopup("Hello World!").addTo(MAP);
+
+MARKER.on("click", (event) => {
 	console.log(event);
 });
