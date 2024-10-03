@@ -9,3 +9,13 @@ const CARTODB_POSITRON = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_al
 });
 
 CARTODB_POSITRON.addTo(MAP);
+
+MAP.on("click", (event) => {
+	console.log(event);
+});
+
+const MARKER = L.marker([0, 0]).bindPopup("Hello World!").addTo(MAP);
+
+MARKER.on("click", (event) => {
+	console.log(event);
+});
