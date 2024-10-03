@@ -16,7 +16,20 @@
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "./dist"
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
-	"exclude": ["node_modules", "dist"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+	"include": [
+		"src/**/*.d.ts",
+		"src/**/*.ts",
+		"src/**/*.js",
+		"src/**/*.svelte",
+		"src/svelte.config.jsg.js"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
 }
