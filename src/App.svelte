@@ -19,7 +19,12 @@
 			console.log(event);
 		});
 
-		const MARKER = L.marker([0, 0]).bindPopup("Hello World!").addTo(MAP);
+		const markerIcon = L.icon({
+			iconUrl: "./marker-icon.png",
+			shadowUrl: "./marker-shadow.png"
+		});
+
+		const MARKER = L.marker([0, 0], { icon: markerIcon }).bindPopup("Hello World!").addTo(MAP);
 
 		MARKER.on("click", (event) => {
 			console.log(event);
