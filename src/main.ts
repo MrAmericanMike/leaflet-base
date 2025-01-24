@@ -1,7 +1,8 @@
+import { mount } from "svelte";
 import App from "./App.svelte";
 
-const app = new App({
+const APP = mount(App, {
 	target: document.querySelector("#app")
 });
 
-export default app;
+export default APP;
